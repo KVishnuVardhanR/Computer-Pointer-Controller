@@ -42,7 +42,8 @@ A Computer Pointer Controller is a **Human-Computer Interaction Project**, where
   - Facial Landmark Detection model
   - Gaze Estimation model
 - Create a folder named **models** in the project directory, These models are to be downloaded and stored in models folder.
-- The Ensembling of models to be done for controlling mouse pointer can be seen in the pipeline.png above.
+
+![Ensembling Of Models](./bin/pipeline.png)
 
 **Note: This project has been tested only in Windows 10 Operating System environment with Intel core i3-7100 processor which has an Intel Integrated GPU HD Graphics 630.**  
 
