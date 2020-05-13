@@ -43,7 +43,9 @@ A Computer Pointer Controller is a **Human-Computer Interaction Project**, where
   - Gaze Estimation model
 - Create a folder named **models** in the project directory, These models are to be downloaded and stored in models folder.
 
-**Note: This project has been tested only in Windows 10 Operating System environment.**  
+![Ensembling_models](pipeline.png')
+
+**Note: This project has been tested only in Windows 10 Operating System environment with Intel core i3-7100 processor which has an Intel Integrated GPU HD Graphics 630.**  
 
 ## Demo
 
@@ -68,7 +70,7 @@ A Computer Pointer Controller is a **Human-Computer Interaction Project**, where
 
 ## Benchmarks
 
-The benchmark result of running my model in CPU with multiple model precisions are :
+The benchmark result of running my model on **CPU** with multiple model precisions are :
 - FP32:
   - The total model loading time is : 3.361sec
   - The total inference time is : 11.4sec
@@ -82,7 +84,19 @@ The benchmark result of running my model in CPU with multiple model precisions a
 - INT8:
   - The total model loading time is : 6.03sec
   - The total inference time is : 8.7sec
-  - The total FPS is : 0.45fps  
+  - The total FPS is : 0.45fps 
+
+The benchmark result of running my model on **IGPU[Intel HD Graphics 630]** with multiple model precisions are :
+- FP32:
+  - The total model loading time is : 65.697sec
+  - The total inference time is : 9.0sec
+  - The total FPS is : 0.4444fps
+  
+- FP16:
+  - The total model loading time is : 66.4sec
+  - The total inference time is : 9.4sec
+  - The total FPS is : 0.425fps
+ 
   
 ## Results
 
@@ -91,7 +105,7 @@ The benchmark result of running my model in CPU with multiple model precisions a
 - By comparing the results between FP16 and INT8, the inference is same but the model loading time was more.
 - Hence, by reducing the precision from FP32 to FP16 the model was able to run inference faster with more number of frames per second and with less model loading time.
 
-## Stand Out Suggestions
+## Stand Out Performances
 - I've build an inference pipeline for both video file and webcam feed as input. Allowing the user to select their input option in the command line arguments:
   - ```-V``` argument takes the input video file or a webcam, for accessing video file the command is ```-V "<path of video file>"``` whereas for accessing webcam ```-V "cam"```. 
 - I improved my model inference time by changing the precisions of the models, the following precisions been used on the models are: 
