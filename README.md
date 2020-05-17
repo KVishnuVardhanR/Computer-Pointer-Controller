@@ -1,6 +1,7 @@
 # Computer Pointer Controller
 
 A Computer Pointer Controller is a **Human-Computer Interaction Project**, where the user can control the mouse movements with his\her **eye-gaze** which will be captured through a webcam or even a video, with the help of **OpenVINO Toolkit** along with its Pre-Trained Models which helps deploying AI at Edge.
+This project has the ability to run multiple models in the same machine and coordinate the flow of data between those models.
 
 
 ## Project Set Up and Installation
