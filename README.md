@@ -8,7 +8,7 @@ This project has the ability to run multiple models in the same machine and coor
 
 - Setup your local environment:
   - Download and install the **OpenVINO Toolkit**. The installations directions for OpenVINO can be found [here](https://docs.openvinotoolkit.org/latest/index.html)
-  - Run the **Verification Scripts to verify your installation**. This is a very important step to be done before you proceed further.  
+  - Run the **Verification Scripts to verify your installation**. This is a very important step to be done before you proceed further.
 - The project directory is structured as follows:
 ```
 					project
@@ -31,7 +31,7 @@ This project has the ability to run multiple models in the same machine and coor
 	
 ```
   - The project directory contains a ```bin``` folder which has an .mp4 file, can be used as the input file for the project.
-  - It has requirements.txt file which contains all the necessary dependencies to be installed before running the project.
+  - It has ```requirements.txt``` file which contains all the necessary dependencies to be installed before running the project.
   - The ```src``` folder in project directory contains the following python files:
     - The input_feeder.py is used to take the input file such as a video file or a webcam and yeilds the frames for running inference.
 	- The mouse_controller.py takes the x,y co-ordinates from the gaze.py to move the mouse.
